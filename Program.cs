@@ -54,17 +54,44 @@
 // .ToList();
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 
-int[] numbers = { 1, 2, 3, 4, 6 };
-int sum = 0;
-foreach (int num in numbers) 
-{
-    Console.WriteLine(num);
-    sum += num;
-}
-Console.WriteLine($"Сумма: {sum}");
+// int[] numbers = { 1, 2, 3, 4, 6 };
+// int sum = 0;
+// foreach (int num in numbers) 
+// {
+//     Console.WriteLine(num);
+//     sum += num;
+// }
+// Console.WriteLine($"Сумма: {sum}");
 
-string[] days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
-foreach (string day in days)
+// string[] days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+// foreach (string day in days)
+// {
+//     Console.WriteLine($"{day}!");
+// }
+
+// string word = "программирование";
+// string chars = "аеёиоуыэюя";
+// int count = 0;
+// foreach (char letter in word) 
+// {
+//     if (!chars.Contains(char.ToLower(letter)))
+//     {
+//         count++;
+//     }
+// }
+// Console.WriteLine($"Количество согласных букв: {count}");
+
+int[] prices = { 150, 600, 450, 1200, 300, 550 };
+int sum = 0;
+int count = 0;
+foreach (int price in prices) 
 {
-    Console.WriteLine($"{day}!");
+    sum = sum + price;
+    
+    if (price > 500) 
+    {
+        count = count + 1;
+    }
 }
+Console.WriteLine(sum);
+Console.WriteLine(count);
